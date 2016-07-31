@@ -9,8 +9,8 @@ import javax.imageio.ImageIO;
 
 public class TrippyJuliaFractals {
 	//Our Julia function: f(x) = z^2 (- 0.221 - 0.713) Were () is the constant.
-	static final double REALNUM = -0.221;
-	static final double IMNUM = -0.713;
+	static final double REALNUM = -0.713;
+	static final double IMNUM = 0.27015;
 	static final double MINRANGE = -1;
 	static final double MAXRANGE = 1;
 	static final int WIDTH = 1920; //Image Width
@@ -28,6 +28,12 @@ public class TrippyJuliaFractals {
 		}
 		
 		public void applyF(){
+			/*
+			 * The function is z^2 - c were z = (x + yi).
+			 * (x + yi)^2 = x^2 + 2xyi - y^2
+			 * Bellow we add the real numbers to the real variable
+			 * and the imaginary values to the imaginary variable.
+			 */
 			double re = real*real - imaginary*imaginary + REALNUM;
 			double im = 2*real*imaginary + IMNUM;
 			this.real = re;
@@ -40,15 +46,14 @@ public class TrippyJuliaFractals {
 	}
 	
 	public static void main(String[] args) throws IOException {
-		// TODO Auto-generated method stub
 		long start = System.currentTimeMillis();
 		
 		BufferedImage image = new BufferedImage(WIDTH, HEIGHT, BufferedImage.TYPE_BYTE_GRAY);
 		WritableRaster wr = (WritableRaster) image.getData();
 		
-		int[] pixels;
-		int x = 0;
-		int y = 0;
+		int x = 0;	//X Cord on the image
+		int y = 0;	//Y Cord on the image
+		int i;		//Num of iterations
 		
 		//Looping through each pixel making complex numbers for all spaces
 		for (y = 0; y < HEIGHT; y++){
@@ -59,15 +64,10 @@ public class TrippyJuliaFractals {
 				
 				ComplexNumber cn = new ComplexNumber(a, b);
 				
-				//Num of iterations
-				int i;
-				
 				//Starting iteration process
-				for (i = 0; i < MAXITERATIONS; i++){
+				for (i = 0; i < MAXITERATIONS && cn.getAbs()<=THRESHOLD; i++){
+					//Apply the Julia set function
 					cn.applyF();
-					if(cn.getAbs()>THRESHOLD) {
-						break;
-					}
 				}
 				
 				wr.setSample(x, y, 0, i);
