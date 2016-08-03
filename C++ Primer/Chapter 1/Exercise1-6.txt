@@ -1,0 +1,6 @@
+The code fragment is illegal because the output operators "<<" is missing a ostream to send the output to. 
+The << operator takes two operands and in the code fragment displayed in the book there is only one. An IDE would give the 
+error notification that it expected an expression. 
+
+A solution for this would either be to add std::cout before the << operators that misses an ostream or remove the semicolons 
+for all but the last statement.
