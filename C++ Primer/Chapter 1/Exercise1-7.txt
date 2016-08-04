@@ -1,0 +1,7 @@
+Trying to compile with a nested comment like: 
+	/*
+	* comment pairs /* */ cannot nest.
+	* ''cannot nest'' is considered source code,
+	* as is the rest of the program
+	*/
+In Visual studio this will result in loads of syntax errors as well as identifier 'cannot' is undefined.
