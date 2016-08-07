@@ -1,0 +1,7 @@
+A for lets you initialize a counter variable check a condition as well as increment your counter variable all in one line, as well
+as in a structured and organized way. 
+
+A for loop has the advantage if you know how many times the loop should run.
+A while loop is good when we do not know the number of iterations in advance.
+
+Stackoverflow resource: http://stackoverflow.com/questions/2950931/for-vs-while-in-c-programming

@@ -1,0 +1,2 @@
+The for loop in the example loops from value -100 to 100 and adds every value in the range to the sum variable.
+The end result is zero because the negative values and the positive values take eachother out resulting in 0.
