@@ -1,0 +1,4 @@
+What happends if the input values are all equal is that the counter will go up untill there is nothing more
+to read or the user interupts the input stream. Then it will print a line with the ammount of occurances the value had. 
+
+If there are no duplicate values there will just be input that the values ocurred one time.
