@@ -1,0 +1,4 @@
+(a) "Who goes with F\145rgus?\012" - Who goes with Fergus?\n - String
+(b) 3.14e1L - Long double
+(c) 1024f - Float
+(d) 3.14L - Long double

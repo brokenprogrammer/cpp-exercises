@@ -1,0 +1,2 @@
+First line holds normal decimal integers.
+Second line's month is invalid because octals doesnt have the number 9. But the day variable is an octal.
