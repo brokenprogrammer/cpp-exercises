@@ -1,0 +1,15 @@
+Both int and short have at least 16 bits, long uses at least 32 bits and long long atleast 64 bits.
+Signed means the integer can hold both positive and negative numbers while unsigned can only recognise numbers
+that are 0 or higher.
+
+From the book about float & double:
+	Use double for floating-point computations; float usually does not have enough precision, 
+	and the cost of double-precision calculations versus single-precision is negligible. 
+	In fact, on some machines, double-precision operations are faster than single. 
+	The precision offered by long double usually is unnecessary and often entails considerable run-time cost. 
+	(In a word: float < double < long double)
+
+From stackoverflow about int vs short:
+	What Ben said. You will actually create less efficient code since all the registers 
+	need to strip out the upper bits whenever any comparisons are done. Unless you need 
+	to save memory because you have tons of them, use the native integer size. That's what int is for.

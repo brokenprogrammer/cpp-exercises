@@ -1,0 +1,3 @@
+To calculate mortgage payment you will work with percentages which often results in values that need decimals.
+For the rate there could be a value like 3.7 % per year and there you would need either float or double.
+For the principal there would be a sum which also requries decimals together with the payment.
