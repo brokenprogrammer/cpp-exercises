@@ -1,0 +1,12 @@
+(a): Error. Visual Studio says: type 'int' unexpected. Cannot initialize variable within a iostream call.
+	//Fixed:
+	int input_value = 0;
+	std::cin >> input_value;
+(b): Error: conversion from 'double' to 'int' requires a narrowing conversion. 
+	//Fixed:
+	double i = { 3.14 };
+(c): If wage has been declared before this is ok otherwise an error of unexpected identifier will happend.
+	//Fixed:
+	double wage;
+	double salary = wage = 9999.99;
+(d): Legal but value will be truncated.

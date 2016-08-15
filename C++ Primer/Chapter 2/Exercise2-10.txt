@@ -1,0 +1,14 @@
+What are the initial values, if any, of each of the following variables?
+
+std::string global_str;
+int global_int;
+int main()
+{
+    int local_int;
+    std::string local_str;
+}
+
+global_str : Is a global string so the value will be empty string.
+global_int : Is a global variable so the value will be zero.
+local_int  : Is a local variable so the value will be undefined.
+local_str  : Is a local string but it has a value that is defined by the class. So it is empty string.
