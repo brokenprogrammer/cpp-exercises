@@ -1,0 +1,13 @@
+What is the value of j in the following program?
+
+int i = 42;
+int main()
+{
+    int i = 100;
+    int j = i;
+}
+
+Answ: 100 because the local variable overrides (hides) the global one.
+
+   	
+

@@ -1,0 +1,9 @@
+Is the following program legal? If so, what values are printed?
+
+int i = 100, sum = 0;
+for (int i = 0; i != 10; ++i)
+    sum += i;
+std::cout << i << " " << sum << std::endl;
+
+Answ: Yes it is legal. It prints "100 45" because the i from the for loop cannot be used outside the for loop
+the i which holds the value 100 is used in the cout statement.
