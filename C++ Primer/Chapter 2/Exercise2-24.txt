@@ -1,0 +1,8 @@
+Why is the initialization of p legal but that of lp illegal?
+
+int i = 42;
+void *p = &i;
+long *lp = &i;
+
+A pointer of type void is not bound to any type and can point to any type which lp is a pointer of type long and
+cannot point to any other type than long.

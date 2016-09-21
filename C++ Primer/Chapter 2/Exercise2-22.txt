@@ -1,0 +1,5 @@
+Assuming p is a pointer to int, explain the following code:
+
+if (p) // Is p pointing to anything or is it a null pointer?
+if (*p) // Is the value to which p is pointing to zero?
+

@@ -1,0 +1,11 @@
+Explain each of the following definitions. Indicate whether any are illegal and, if so, why.
+
+int i = 0;
+
+   (a) double* dp = &i;
+   (b) int *ip = i;
+   (c) int *p = &i;
+
+a) Illegal because a pointer has to point to the same type. A double pointer cannot point to an integer.
+b) Illegal because a pointer stores a memory address and not the object itself. 
+c) Legal, The pointer p now points to the integer i.

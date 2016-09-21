@@ -1,0 +1,6 @@
+Pointers points to any other type while the reference is 
+just another name for the object the reference is created for.
+
+A reference is bound to the initial object, a pointer is not. 
+A reference is just another name for an existing object.
+A reference must be initialized when created a pointed does not.
