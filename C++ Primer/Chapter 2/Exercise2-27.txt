@@ -1,0 +1,9 @@
+Which of the following initializations are legal? Explain why.
+
+a) Illegal, r must refer to an object.
+b) Legal if i2 is an int.
+c) Legal
+d) Legal
+e) Legal
+f) Illegal
+g) Legal

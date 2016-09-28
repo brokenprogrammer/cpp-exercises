@@ -1,0 +1,7 @@
+Explain the following definitions. Identify any that are illegal.
+
+a) Illegal, cp must be initialized.
+b) Illegal, p2 must be initialized.
+c) Illegal, ic must be initialized.
+d) Illegal, p3 must be initialized.
+e) Legal.

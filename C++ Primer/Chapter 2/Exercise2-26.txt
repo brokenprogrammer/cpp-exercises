@@ -1,0 +1,6 @@
+Which of the following are legal? For those that are illegal, explain why.
+
+a) Illegal, a const needs to be initialized.
+b) Legal
+c) Legal
+d) First one is legal second one illegal since you cannot change the value of a const.

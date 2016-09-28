@@ -1,0 +1,9 @@
+Given the declarations in the previous exercise determine whether the following assignments are legal. 
+Explain how the top-level or low-level const applies in each case.
+
+
+r1 = v2; //Legal, top level const in v2 is ignored.
+p1 = p2; //Illegal, p2 has low level const and p1 doesnt.
+p2 = p1; //Legal, int* can be converted to const int*.
+p1 = p3; //Illegal, p3 has low level consts and p1 doesnt.
+p2 = p3; //Legal, top level const is ignored. Both has same low level const.
