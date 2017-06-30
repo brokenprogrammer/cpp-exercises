@@ -1,7 +1,8 @@
 import java.util.Arrays;
 
 /**
- * Names scores Problem 22
+ * Names scores
+ * Problem 22
  * 
  * @author Oskar Mendel
  */
