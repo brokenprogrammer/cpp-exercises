@@ -1,4 +1,4 @@
---  Write a function 
+-- Write a function 
 -- extract :: [Maybe a] -> [a] 
 -- that takes a list of Maybe values and returns the elements they contain. 
 -- For example, 
