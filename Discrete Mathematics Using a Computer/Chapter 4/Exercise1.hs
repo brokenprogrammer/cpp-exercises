@@ -1,0 +1,20 @@
+-- Let a be an arbitrary real number. 
+-- Prove, for all natural numbers m and n, that a^(m×n) = (a^m)^n.
+--
+-- Suppose that a is in the set of real numbers. 
+-- For all m, n where m and n is within the set of natural numbers a^mn = (a^m)^n
+--
+-- Proof by induction on n:
+-- 
+-- Base case, n = 0:
+--  Left side           Right side
+--  a^(m0) = a^0 = 1    (a^m)^0 = 1
+--
+-- Inductive case, n = k + 1:
+-- We assume that a^(mk) = (a^m)^k
+--
+-- If a = 0, true because for all x in the natural numbers 0^x = 0.
+-- Assume a is not equal to 0. Multiply both sides with a^m
+--
+-- Left side                                Right side
+-- a^(mk) * a^k = a^(mk+m) = a^(m(k+1))     (a^m)^k * a^m = (a^m)^k+1
