@@ -1,0 +1,13 @@
+-- Prove that the sum of the ﬁrst n odd positive numbers is n^2.
+--
+-- Proof by induction on n:
+--
+-- Base case, n = 0:
+--  Left side   Right side
+--  0           0
+--
+-- Inductive case, n = k + 1:
+--  We assume that sum of the first k odd numbers is k^2.
+--  The k + 1 th odd number is 2k + 1 so adding it to both sides gives
+--  Left side                               Right side
+--  sum of the first k + 1 odd numbers.     k^2 + 2k + 1 = (k + 1)^2
