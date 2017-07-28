@@ -1,0 +1,21 @@
+-- Prove that the sum of a^i from i to n is equal to
+-- (a^(n+1)-1)/(a-1) where a is a real number and not equal to 1.
+-- 
+-- Proof by induction on n:
+--
+-- Base case, n = 0:
+-- Left side
+-- sum of a^i from i = 1 to n. = a^1 = a^0 = 1.
+-- Right side
+-- (a^1 - 1)/(a - 1) = 1
+--
+-- Inductive case, n = k + 1:
+-- We assume that its true for n = k.
+--
+-- We add a^(k+1) to both sides
+-- Left side
+-- sum of a^i from i to k.  
+--
+-- Right side
+-- a^(k+1) * (a^(k+1)-1)/(a-1) = (a^(k+2)- a^(k+1) + a^(k+1) - 1)/(a - 1) =
+-- (a^(k+2) - 1)/(a - 1)
