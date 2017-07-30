@@ -1,0 +1,17 @@
+-- What are the values of the following expressions?
+--  map double [1, 4, 4, 3]
+--  map (double . double) [1, 4, 4, 3]
+--  map double []
+--
+-- Answer: 
+--  1. map double [1, 4, 4, 3] = [2, 8, 8, 6]
+--  2. map (double . double) [1, 4, 4, 3] = [4, 16, 16, 12]
+--  3. map double [] = []
+--
+-- Which of the following assertions are true and why?
+--  sum . map double = double sum
+--  sum . map sum    = sum . concat
+--  sum . sort       = sum
+--
+-- Answer:
+--  All of the three assertions hold.
