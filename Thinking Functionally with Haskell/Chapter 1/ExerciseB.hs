@@ -1,0 +1,12 @@
+-- Which of the following expressions is a rendering of 
+-- sin^2 theta into Haskell?
+--  sin^2 theta     sin theta^2     (sin theta)^2
+--
+-- Answer:
+--  Both sin theta^2 and (sin theta)^2
+--
+-- How would you express sin 2theta / 2Pi as a well-formed
+-- Haskell expression?
+--
+-- Answer:
+--  sin (2*theta) / (2 * Pi) 
