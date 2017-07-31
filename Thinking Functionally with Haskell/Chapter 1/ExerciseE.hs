@@ -1,0 +1,18 @@
+-- Is numerical addition associative? Is list 
+-- concetanetion associative? Is functional 
+-- composition aswsociative? Give an example 
+-- of an operator on numbers that is not associative.
+--
+-- Answer:
+--  Numerical addition, list concatenation and functional composition
+--  is all associative. Exponentiation is not associative.
+--
+-- What are the identity elements of addition, concatenation 
+-- and functional composition?
+--
+-- Answer:
+--  The identity element of addition is 0, 
+--  identity of list concatenation is the empty list.
+--  The identity of functional composition is the identity function:
+--  ident :: a -> a
+--  ident x = x
