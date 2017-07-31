@@ -1,0 +1,5 @@
+-- How would you compute words and then converting 
+-- each letter to lowercase using the previous example?
+--
+-- Answer:
+--  map (map toLower) . words
