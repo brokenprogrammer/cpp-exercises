@@ -1,0 +1,23 @@
+-- 'H' and "H" are different types. What are they?
+-- What is the difference between 2001 and "2001"?
+--
+-- Answer:
+--  'H' is a Char and "H" is a String which in Haskell
+--  are a list of Chars so "h" is a list with one element.
+--  2001 is an Integer and "2001" is a String just like "H".
+--  'H'    :: Char
+--  "H"    :: [Char]
+--  2001   :: Integer
+--  "2001" :: [Char]
+--
+-- Simplify the following concatenations:
+-- [1,2,3] ++ [3,2,1]
+-- "Hello" ++ " World!"
+-- [1,2,3] ++ []
+-- "Hello" ++ "" ++ "World!"
+--
+-- Answer:
+--  [1,2,3] ++ [3,2,1]       = [1,2,3,3,2,1]
+-- "Hello" ++ " World!"      = "Hello World!"
+-- [1,2,3] ++ []             = [1,2,3]
+-- "Hello" ++ "" ++ "World!" = "HelloWorld!"
