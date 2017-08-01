@@ -1,0 +1,7 @@
+-- What is the answer to Chris Maslanka's puzzle:
+--  "Is a half of two plus two equal to two or three?"
+--
+-- Answer:
+--  The answer is 'Yes' it is equal to (2 || 3) the 
+--  answer can be found by knowing the predecence of math
+--  operations to get the value 1/2 + 2 = 3
