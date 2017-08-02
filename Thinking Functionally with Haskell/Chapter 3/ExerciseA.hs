@@ -1,0 +1,14 @@
+-- Which of the following expressions denote 1=
+--  -2 + 3
+--  3 + -2
+--  3 + (-2)
+--  subtract 2 3
+--  2 + subtract 3
+--
+-- Answer:
+--  3 + (-2), subtract 2 3, and -2 + 3
+--
+-- Express subtract using flip
+--
+-- Answer:
+--  flip (-)
