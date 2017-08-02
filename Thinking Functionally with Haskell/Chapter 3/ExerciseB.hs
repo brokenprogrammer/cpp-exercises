@@ -1,0 +1,4 @@
+-- How would you define the (^^) function?
+--
+-- Answer:
+--  x ^^ n = if 0 <= n then x^n else 1/(x ^ (negate n))
