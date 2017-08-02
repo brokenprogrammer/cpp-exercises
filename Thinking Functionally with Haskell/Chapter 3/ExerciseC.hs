@@ -1,0 +1,8 @@
+-- Could you define div in the following way?
+--  div :: Integral a => a -> a -> a
+--  div x y = floor (x/y)
+--
+-- Answer:
+--  No you would have to convert the values from integers:
+--  div :: Integral a => a -> a -> a
+--  div x y = floor (fromInteger x / fromInteger y)
