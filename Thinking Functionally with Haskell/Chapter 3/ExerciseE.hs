@@ -1,0 +1,15 @@
+-- Define a function isqrt that returns the floor of the square root of a number.
+-- Define it so that it takes time proportional to log x steps.
+--
+-- Answer:
+--  isqrt :: Float -> Integer
+--  isqrt x = fst (until unit (shrink x) (bound x))
+--      where unit (m, n) = (m+1 == n)
+--
+--  shrink :: Float -> Interval -> Interval
+--  shrink x (m,n) = if (p*p) `leq` x then (p,n) else (m,p)
+--      where p = (m+n) `div` 2
+--
+--  bound :: Float -> Interval
+--  bound x = (0, until above (*2) 1)
+--      where above n = x `lt` (n*n)
