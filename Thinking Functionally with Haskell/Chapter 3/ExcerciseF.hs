@@ -1,0 +1,5 @@
+-- Whats a better way to approximate the square root of x than either
+-- y or x/y?
+--
+-- Answer:
+--  ((x+y)/y)/2 and the relative test is the more sensible one.
