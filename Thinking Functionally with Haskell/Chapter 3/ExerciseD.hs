@@ -1,0 +1,9 @@
+-- Why doesnt Dicks way of computing floor work?
+--  floor :: Float -> Integer
+--  floor = read . (takeWhile (/= '.') . show)
+--
+-- Answer:
+--  If there is a negative number such as (-3.1)
+--  the answer would be 3 while it should be 4.
+--  It also doesnt work on numbers written with
+--  scientific notation.
