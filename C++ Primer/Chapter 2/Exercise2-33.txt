@@ -1,0 +1,11 @@
+Using the variable definitions from this section, determine what happens
+in each of these assignments:
+	a = 42;	b = 42;	c = 42;
+	d = 42; e = 42;	g = 42;
+
+a = 42; // Sets the value 42 to the integer a.
+b = 42; // Sets the value 42 to the integer b.
+c = 42; // Sets the value 42 to the integer c.
+d = 42; // Error, d is an int *. Corrent would be *d = 42;
+e = 42; // Error, e is an const int*. Correct would be e = &c;
+g = 42; // Error, g is an const int& bound to ci.
