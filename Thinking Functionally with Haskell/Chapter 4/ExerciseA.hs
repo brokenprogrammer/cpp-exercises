@@ -1,0 +1,15 @@
+-- Which of the following equations are true for all xs and which are false?
+-- []:xs = xs
+-- []:xs = [[], xs]
+-- xs:[] = xs
+-- xs:[] = [xs]
+-- xs:xs = [xs, xs]
+-- [[]] ++ xs = xs
+-- [[]] ++ xs = [[], xs]
+-- [[]] ++ [xs] = [[], xs]
+--
+-- Answer:
+-- The following are true.
+-- xs:[] = [xs]
+-- [[]] ++ [xs] = [[], xs]
+-- [xs] ++ [] = [xs]
