@@ -21,4 +21,4 @@ let binomial (n : bigint, k : bigint) = factorial (n) / (factorial (k) * factori
 
 let gridToBinomial (x : bigint , y : bigint) = (x+y, y)
 
-let answer = grid |> gtb |> binomial
+let answer = grid |> gridToBinomial |> binomial
